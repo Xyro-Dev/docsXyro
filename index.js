@@ -1,14 +1,18 @@
 const express = require('express');
+const path = require('path')
+
 const app = express();
+
+
 
 app.use = express();
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname, "docs.html");
+  res.sendFile(path.join(__dirname, 'docs.html"));
 });
 
 app.get("/playground", (req, res) => {
-  res.sendFile(__dirname,  + 'playground.html'); 
+  res.sendFile(__dirname, + 'playground.html'); 
 });
 
 
