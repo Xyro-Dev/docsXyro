@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/playground", (req, res) => {
-  res.sendFile(path.join(__dirname, "playground.html")); 
+  res.sendFile(path.join(__dirname,  + 'layground.html')); 
 });
 
 
